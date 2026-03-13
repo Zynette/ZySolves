@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Call | RemoteTech</title>
+    <meta
+      name="description"
+      content="Book a discovery call or send a message to get started."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">RemoteTech</span>
+            <span class="brand-tag">Remote services</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            Menu
+          </button>
+
+          <div class="nav-menu" id="navMenu" data-nav-menu>
+            <a href="services.html">Services</a>
+            <a href="virtual-assistant.html">Virtual Assistant</a>
+            <a href="website-setup.html">Website Setup</a>
+            <a href="tech-support.html">Tech Support</a>
+            <a href="about.html">About</a>
+            <a class="active btn btn-primary btn-small" href="contact.html"
+              >Book a call</a
+            >
+          </div>
+        </nav>
+      </div>
+      <div class="header-glow" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s talk</h1>
+          <p class="lead muted">
+            Use this page to book a discovery call or send a message. We will
+            recommend the simplest path forward.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid-2">
+            <div class="panel">
+              <h2>What happens next</h2>
+              <ul class="list" role="list">
+                <li>We clarify your needs and outcomes</li>
+                <li>We recommend the right service</li>
+                <li>We explain next steps clearly</li>
+              </ul>
+              <p class="muted small">
+                No pressure. No long-term commitment required to start.
+              </p>
+
+              <div class="callout mt-md">
+                <div>
+                  <h3>Discovery call placeholder</h3>
+                  <p class="muted">
+                    Add your scheduling link here later (Calendly or similar).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h2>Send a message</h2>
+
+              <form class="form" data-form>
+                <label>
+                  Name
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+
+                <label>
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+
+                <label>
+                  Client type
+                  <select name="clientType" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option value="b2b">Business</option>
+                    <option value="b2c">Individual</option>
+                  </select>
+                </label>
+
+                <label>
+                  What do you need help with?
+                  <select name="service" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option value="va">Virtual Assistant</option>
+                    <option value="setup">Website and Digital Setup</option>
+                    <option value="support">
+                      Ongoing Tech Support and Automation
+                    </option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                </label>
+
+                <label>
+                  Message
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+                <p class="muted small" data-form-status aria-live="polite"></p>
+              </form>
+
+              <p class="muted small mt-md">
+                This form uses a demo handler. Connect it to your email service,
+                Formspree, or backend when ready.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="brand brand-footer">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">RemoteTech</span>
+              <span class="brand-tag"
+                >Virtual assistance, websites, support</span
+              >
+            </span>
+          </div>
+          <p class="muted small">
+            Remote services for businesses and individuals. Built for clarity,
+            consistency, and measurable outcomes.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Book a call</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p class="muted small">
+          © <span data-year></span> RemoteTech. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
